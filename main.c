@@ -16,7 +16,14 @@ int main(int argc, char *argv[])
 	printf("swapping void* values ...\n");
 	swap(&x, &y, sizeof(int));
 	printf("x = %.8X , y = %.8X\n", x, y);
+	printf("\n\n");
 
+	float f_x = 555.34;
+	float f_y = 3456.6556498;
+	printf("x = %f , y = %f\n", f_x, f_y);
+	printf("swapping void* values ...\n");
+	swap(&f_x, &f_y, sizeof(float));
+	printf("x = %f , y = %f\n", f_x, f_y);
 
 }
 
